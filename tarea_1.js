@@ -10,10 +10,13 @@ db.grades.count();
 //800
 
 //
-//3)Calificaciones del estudiante con id=4.
+//3)Encuentra todas las calificaciones del estudiante con el id numero 4.
 //
-db.grades.find({student_id:4},{student_id:1,score:1,_id:0}).count()
-//4
+db.grades.find({student_id: 4}, {score:1, _id:0})
+// { "score" : 87.89071881934647 }
+// { "score" : 27.29006335059361 }
+// { "score" : 5.244452510818443 }
+// { "score" : 28.656451042441 }
 
 //
 //4)¿Cuantos registros hay de tipo exam?
